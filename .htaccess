@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^/?kartan/(.*)$ http://www.kartan.no/$1 [L,P]
+RewriteRule ^/?app/(.*)$ http://internal.example.com/app/$1 [L,P]
+
+ProxyPassReverse / http://internal.example.com/
